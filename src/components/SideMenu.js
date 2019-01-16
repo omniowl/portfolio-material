@@ -10,7 +10,14 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import Button from "@material-ui/core/es/Button/Button";
+import ProjectContainer from "../App";
+import Typography from "@material-ui/core/es/Typography/Typography";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+// Constants
 import ViewConstants from "../constants/ViewConstants";
+import ExternalConstants from '../constants/ExternalConstants';
 
 // Icon Imports
 import Home from '@material-ui/icons/Home';
@@ -18,9 +25,12 @@ import AttachMoney from '@material-ui/icons/AttachMoney';
 import School from '@material-ui/icons/School';
 import Person from '@material-ui/icons/Person';
 import HelpOutline from '@material-ui/icons/HelpOutline';
-import Button from "@material-ui/core/es/Button/Button";
-import ProjectContainer from "../App";
-import Typography from "@material-ui/core/es/Typography/Typography";
+import {
+    faGithub,
+    faTwitter,
+    faLinkedin,
+    faYoutube
+} from '@fortawesome/free-brands-svg-icons';
 
 const drawerWidth = 240;
 
@@ -56,25 +66,44 @@ class SideMenu extends Component {
         view: <ProjectContainer category={"featured"} featured={true}/>
     };
 
-    handleDrawerOpen = () => {
-        this.setState({ open: true });
-    };
-
-    handleDrawerClose = () => {
-        this.setState({ open: false })
+    openExternal = url => {
+        window.open(url, '_blank');
     };
 
     render() {
         const { classes, handleViewSwitch, content } = this.props;
-        const { open } = this.state;
 
         const buttonWidth = "100%";
+        const iconSize = 24;
 
         return (
             <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar}>
-                    <Toolbar></Toolbar>
+                    <Toolbar >
+                        <Typography style={{ width: "100%", alignItems: 'center' }}>
+                            <Button onClick={() => this.openExternal(ExternalConstants.GITHUB)}
+                                    style={{ color: 'white', fontSize: iconSize }}
+                            >
+                                <FontAwesomeIcon icon={faGithub}/>
+                            </Button>
+                            <Button onClick={() => this.openExternal(ExternalConstants.TWITTER)}
+                                    style={{ color: 'white', fontSize: iconSize }}
+                            >
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Button>
+                            <Button onClick={() => this.openExternal(ExternalConstants.YOUTUBE)}
+                                    style={{ color: 'white', fontSize: iconSize }}
+                            >
+                                <FontAwesomeIcon icon={faYoutube}/>
+                            </Button>
+                            <Button onClick={() => this.openExternal(ExternalConstants.LINKEDIN)}
+                                    style={{ color: 'white', fontSize: iconSize }}
+                            >
+                                <FontAwesomeIcon icon={faLinkedin}/>
+                            </Button>
+                        </Typography>
+                    </Toolbar>
                 </AppBar>
                 <Drawer
                     className={classes.drawer}
@@ -89,25 +118,25 @@ class SideMenu extends Component {
                     <List>
                         <Button onClick={() => handleViewSwitch(ViewConstants.HOME)} style={{ width: buttonWidth }}>
                             <ListItem>
-                                <ListItemIcon><Home /></ListItemIcon>
+                                <ListItemIcon><Home style={{color: 'Blue'}}/></ListItemIcon>
                                 <ListItemText primary="Home"/>
                             </ListItem>
                         </Button>
                         <Button onClick={() => handleViewSwitch(ViewConstants.COMMERCIAL)}>
                             <ListItem>
-                                <ListItemIcon><AttachMoney /></ListItemIcon>
+                                <ListItemIcon><AttachMoney style={{color: 'LimeGreen'}}/></ListItemIcon>
                                 <ListItemText primary="Commercial Projects"/>
                             </ListItem>
                         </Button>
                         <Button onClick={() => handleViewSwitch(ViewConstants.UNIVERSITY)} style={{ width: buttonWidth }}>
                             <ListItem>
-                                <ListItemIcon><School /></ListItemIcon>
+                                <ListItemIcon><School style={{color: 'DarkOrange'}}/></ListItemIcon>
                                 <ListItemText primary="University Projects"/>
                             </ListItem>
                         </Button>
                         <Button onClick={() => handleViewSwitch(ViewConstants.PERSONAL)} style={{ width: buttonWidth }}>
                             <ListItem>
-                                <ListItemIcon><Person /></ListItemIcon>
+                                <ListItemIcon><Person style={{color: 'MediumSlateBlue'}}/></ListItemIcon>
                                 <ListItemText primary="Personal Projects"/>
                             </ListItem>
                         </Button>
@@ -116,7 +145,7 @@ class SideMenu extends Component {
                     <List>
                         <Button onClick={() => handleViewSwitch(ViewConstants.ABOUT)} style={{ width: buttonWidth }}>
                             <ListItem>
-                                <ListItemIcon><HelpOutline /></ListItemIcon>
+                                <ListItemIcon><HelpOutline style={{color: 'DarkGoldenrod'}}/></ListItemIcon>
                                 <ListItemText primary="About Me"/>
                             </ListItem>
                         </Button>
@@ -126,28 +155,44 @@ class SideMenu extends Component {
                         <ListItem>
                             <ListItemText primary={<h3>External Links</h3>}/>
                         </ListItem>
-                        <Button style={{ width: buttonWidth }}>
+                        <Button style={{ width: buttonWidth }} onClick={() =>
+                            this.openExternal(ExternalConstants.GITHUB)}
+                        >
                             <ListItem>
-                                <ListItemIcon><HelpOutline /></ListItemIcon>
+                                <ListItemIcon>
+                                    <FontAwesomeIcon icon={faGithub} style={{ fontSize: iconSize, color: "Purple"}}/>
+                                </ListItemIcon>
                                 <ListItemText primary="Github"/>
                             </ListItem>
                         </Button>
-                        <Button style={{ width: buttonWidth }}>
+                        <Button style={{ width: buttonWidth }} onClick={() =>
+                            this.openExternal(ExternalConstants.TWITTER)}
+                        >
                             <ListItem>
-                                <ListItemIcon><HelpOutline /></ListItemIcon>
+                                <ListItemIcon>
+                                    <FontAwesomeIcon icon={faTwitter} style={{ fontSize: iconSize, color: "DeepSkyBlue"}}/>
+                                </ListItemIcon>
                                 <ListItemText primary="Twitter"/>
                             </ListItem>
                         </Button>
-                        <Button style={{ width: buttonWidth }}>
+                        <Button style={{ width: buttonWidth }} onClick={() =>
+                            this.openExternal(ExternalConstants.YOUTUBE)}
+                        >
                             <ListItem>
-                                <ListItemIcon><HelpOutline /></ListItemIcon>
-                                <ListItemText primary="LinkedIn"/>
+                                <ListItemIcon>
+                                    <FontAwesomeIcon icon={faYoutube} style={{ fontSize: iconSize, color: "Red"}}/>
+                                </ListItemIcon>
+                                <ListItemText primary="YouTube"/>
                             </ListItem>
                         </Button>
-                        <Button style={{ width: buttonWidth }}>
+                        <Button style={{ width: buttonWidth }} onClick={() =>
+                            this.openExternal(ExternalConstants.LINKEDIN)}
+                        >
                             <ListItem>
-                                <ListItemIcon><HelpOutline /></ListItemIcon>
-                                <ListItemText primary="YouTube"/>
+                                <ListItemIcon>
+                                    <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: iconSize, color: "DodgerBlue"}}/>
+                                </ListItemIcon>
+                                <ListItemText primary="LinkedIn"/>
                             </ListItem>
                         </Button>
                     </List>
@@ -164,7 +209,7 @@ class SideMenu extends Component {
 SideMenu.propTypes = {
     classes: PropTypes.object.isRequired,
     handleViewSwitch: PropTypes.func.isRequired,
-    content: PropTypes.object.isRequired
+    content: PropTypes.array.isRequired
 };
 
 export default withStyles(styles)(SideMenu);
