@@ -11,7 +11,7 @@ class App extends Component {
     state = {
         currentView: ViewConstants.NONE,
         view: [
-            <div>
+            <div key={Math.random()}>
                 <h1>
                     Featured
                 </h1>
@@ -24,7 +24,7 @@ class App extends Component {
                     you'll find links to other relevant external platforms.
                 </Typography>
             </div>,
-            <ProjectContainer featured={true} category={"featured"} />
+            <ProjectContainer key={Math.random()} featured={true} category={"featured"} />
         ]
     };
 
@@ -34,7 +34,7 @@ class App extends Component {
             switch(id) {
                 case ViewConstants.COMMERCIAL:
                     newView = [
-                        <div>
+                        <div key={'commercial_div'}>
                             <h1>Commercial Projects</h1>
                             <Typography paragraph style={{ fontSize: 20}}>
                                 In this section you will find all the commercial projects that I'm allowed to list. The
@@ -42,23 +42,23 @@ class App extends Component {
                                 otherwise, all projects that doesn't have an explicit lead listed, was led by me.
                             </Typography>
                         </div>,
-                        <ProjectContainer featured={false} category={"commercial"}/>
+                        <ProjectContainer key={'commercial_container'} featured={false} category={"commercial"}/>
                     ];
                     break;
                 case ViewConstants.UNIVERSITY:
-                    newView = <ProjectContainer featured={false} category={"university"} />;
+                    newView = [<ProjectContainer key={'university_container'} featured={false} category={"university"} />];
                     break;
                 case ViewConstants.PERSONAL:
-                    newView = <ProjectContainer featured={false} category={"personal"} />;
+                    newView = [<ProjectContainer key={'personal_container'} featured={false} category={"personal"} />];
                     break;
                 case ViewConstants.ABOUT:
-                    newView = <About/>;
+                    newView = [<About key={'about_container'}/>];
                     break;
                 case ViewConstants.HOME:
                 case ViewConstants.NONE:
                 default:
                     newView = [
-                        <div>
+                        <div key={'home_div'}>
                             <h1>
                                 Featured
                             </h1>
@@ -71,7 +71,7 @@ class App extends Component {
                                 you'll also find links to other relevant external platforms.
                             </Typography>
                         </div>,
-                        <ProjectContainer featured={true} category={"featured"} />
+                        <ProjectContainer key={'home_container'} featured={true} category={"featured"} />
                     ];
                     break;
             }
