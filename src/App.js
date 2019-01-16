@@ -3,6 +3,7 @@ import './App.css';
 import SideMenu from "./components/SideMenu";
 import ViewConstants from "./constants/ViewConstants";
 import ProjectContainer from "./containers/ProjectContainer";
+import About from './containers/About';
 import Typography from "@material-ui/core/es/Typography/Typography";
 
 class App extends Component {
@@ -51,6 +52,7 @@ class App extends Component {
                     newView = <ProjectContainer featured={false} category={"personal"} />;
                     break;
                 case ViewConstants.ABOUT:
+                    newView = <About/>;
                     break;
                 case ViewConstants.HOME:
                 case ViewConstants.NONE:
