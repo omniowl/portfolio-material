@@ -113,8 +113,6 @@ class SideMenu extends Component {
                     }}
                     anchor="left"
                 >
-                    <div className={classes.toolbar} />
-                    <Divider />
                     <List>
                         <Button onClick={() => handleViewSwitch(ViewConstants.HOME)} style={{ width: buttonWidth }}>
                             <ListItem>
