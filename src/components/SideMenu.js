@@ -41,6 +41,7 @@ const styles = theme => ({
     appBar: {
         width: `calc(100% - ${drawerWidth}px)`,
         marginLeft: drawerWidth,
+        backgroundColor: 'Purple'
     },
     drawer: {
         width: drawerWidth,
