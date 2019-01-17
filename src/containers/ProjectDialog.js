@@ -207,7 +207,6 @@ class ProjectDialog extends Component {
 
     render() {
         const { open, handleClose, dialogId } = this.props;
-
         return (
             <React.Fragment>
                 { this.getProjectData(open, handleClose, dialogId) }
