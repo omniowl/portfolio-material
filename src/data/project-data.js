@@ -89,6 +89,65 @@ const projectData = {
             }
         }
     },
+    "killbot": {
+        "name": "Killbot9000",
+        "description": "TBD",
+        "platforms": "raspberry",
+        "frameworks": "google aiy voice",
+        "engines": "",
+        "date": "2018",
+        "languages":"Python",
+        "roles": "Programmer",
+        "credits": "",
+        "media": {
+            "youtubeId": "",
+            "download": {
+                "label": "",
+                "link": ""
+            }
+        }
+    },
+    "vr-preacher": {
+        "name": "VR Preacher",
+        "description":
+            "With a Megaphone in one hand and a sign with your message to the ignorant public in the other, " +
+            "step into the shoes of a local 'madman' preaching their gospel in a local park. You need to shout your message " +
+            "at the oblivious by-passers (yes, actually shout) so they too can see what you see and understand just the same! " +
+            "The concept behind this small game was to explore VR and Voice Assistance in collaboration with each other to " +
+            "see how this level of anonymity, yet exposure, affects people's behaviour as they play.",
+        "platforms": "vive,windows",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2018",
+        "languages":"C#",
+        "roles": "Programmer",
+        "credits": "Christoffer Alexander Krakou",
+        "media": {
+            "youtubeId": "",
+            "download": {
+                "label": "",
+                "link": ""
+            }
+        }
+    },
+    "zinder": {
+        "name": "Zinder",
+        "description": "TBD",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2017",
+        "languages":"C#",
+        "roles": "Programmer",
+        "credits": "",
+        "media": {
+            "youtubeId": "",
+            "download": {
+                "label": "",
+                "link": ""
+            }
+        }
+    },
 };
 
 export default projectData;
