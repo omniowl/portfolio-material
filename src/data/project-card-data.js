@@ -52,10 +52,10 @@ const projectCardData = {
       "cardPlatforms": "android",
       "cardEngines": "unity",
     },
-    "killbot": {
-      "imgAlt": "Killbot9000",
-      "imgName": "Killbot9000.jpg",
-      "cardHeader": "Killbot9000",
+    "murderbot": {
+      "imgAlt": "MURDERBOT9000",
+      "imgName": "MURDERBOT9000.jpg",
+      "cardHeader": "MURDERBOT9000",
       "cardShortText": "Try and convince a robot box to not terminate you by answering its questions.",
       "cardPlatforms": "raspberry",
       "cardEngines": "google aiy voice",
@@ -65,7 +65,7 @@ const projectCardData = {
       "imgName": "ElementalWars.png",
       "cardHeader": "VR Preacher",
       "cardShortText": "Become a preacher and shout your gospel to keep the attention of bypassers in VR.",
-      "cardPlatforms": "vive",
+      "cardPlatforms": "vive,windows",
       "cardEngines": "unity",
     },
     "zinder": {

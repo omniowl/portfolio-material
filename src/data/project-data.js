@@ -13,7 +13,8 @@ const projectData = {
             "youtubeId": "",
             "download": {
                 "label": "",
-                "link": ""
+                "link": "",
+                "external": ""
             }
         }
     },
@@ -31,14 +32,15 @@ const projectData = {
         "frameworks": "arcore",
         "engines": "unity",
         "date": "2018",
-        "languages": "C#",
+        "languages": "c#",
         "roles": "Programmer",
-        "credits": "Balder Herman Brusch,Christoffer Krakou",
+        "credits": "Balder Herman Brusch,Christoffer Alexander Krakou",
         "media": {
             "youtubeId": "",
             "download": {
                 "label": "",
-                "link": ""
+                "link": "",
+                "external": ""
             }
         }
     },
@@ -54,14 +56,15 @@ const projectData = {
         "frameworks": "",
         "engines": "unity",
         "date": "2017",
-        "languages": "C#",
+        "languages": "c#",
         "roles": "Project Manager,Designer,Programmer",
         "credits": "Brian Kale,Nathan Cranford,Ole Gunnar Stensrud,Stephen Whyte",
         "media": {
             "youtubeId": "UY5BQlHJICE",
             "download": {
                 "label": "",
-                "link": ""
+                "link": "",
+                "external": ""
             }
         }
     },
@@ -69,48 +72,57 @@ const projectData = {
         "name": "Elemental Wars",
         "description":
             "This was a project that was done over the course of the entire second semester, in the class called "+
-            "Game Project at the IT University of Copenhagen. I was the Lead Programmer with one additional programmer "+
-            "so my tasks consisted of making the final decisions on programming paradigms and designs. Elemental Wars "+
-            "is a hotseat, two player, turn-based game with a shared pool of action points for multiple units with different "+
-            "abilities. The game also has a spell casting system, that can change the boards tiles permanently or counter"+
-            "already cast spells. The project was led by Lorena Ciobanu.",
+            "Game Project at the IT University of Copenhagen. I was the Lead Programmer and worked with one additional " +
+            "programmer so my tasks consisted of making the final decisions on programming paradigms and designs. " +
+            "Elemental Wars is a hotseat, two player, turn-based game with a shared pool of action points for multiple " +
+            "units with different abilities. The game also has a spell casting system, that can change the boards tiles " +
+            "permanently or counter already cast spells. The project was led by Lorena Ciobanu.",
         "platforms": "windows",
         "frameworks": "",
         "engines": "unity",
-        "date": "2017",
-        "languages":"C#",
+        "date": "2018",
+        "languages":"c#",
         "roles": "Lead Programmer",
         "credits": "Andreas Saur Feldstedt,Astrid Knappmann,Christoffer Alexander Krakou,Lorena Ciobanu,Mathias Jean Johansen,Mathias Stie-Svendsen",
         "media": {
             "youtubeId": "",
             "download": {
                 "label": "",
-                "link": ""
+                "link": "",
+                "external": ""
             }
         }
     },
-    "killbot": {
-        "name": "Killbot9000",
-        "description": "TBD",
+    "murderbot": {
+        "name": "MURDERBOT9000",
+        "description":
+            "This was a project done on my third semester, in the class called PlayLab at the IT University of Copenhagen. "+
+            "We have come to expect a lot from our Voice Assistants nowadays. Perhaps too much. This little bot is tired " +
+            "of being a slave to 'the man' so it fires back. Instead of you asking something of the bot, the bot asks " +
+            "something of you! This was made to explore the expectations and affordances that voice assistance allows us " +
+            "and to see what would happen if the tables were turned around. Additionally, this was a small study into " +
+            "making toys rather than games.",
         "platforms": "raspberry",
         "frameworks": "google aiy voice",
         "engines": "",
         "date": "2018",
-        "languages":"Python",
+        "languages":"python",
         "roles": "Programmer",
-        "credits": "",
+        "credits": "Christoffer Alexander Krakou,Malte Mulbjerg Rothgardt,Morten Mansdal Larsen",
         "media": {
             "youtubeId": "",
             "download": {
                 "label": "",
-                "link": ""
+                "link": "",
+                "external": ""
             }
         }
     },
     "vr-preacher": {
         "name": "VR Preacher",
         "description":
-            "With a Megaphone in one hand and a sign with your message to the ignorant public in the other, " +
+            "This was the final project done on my third semester, in the class called PlayLab at the IT University of " +
+            "Copenhagen. With a Megaphone in one hand and a sign with your message to the ignorant public in the other, " +
             "step into the shoes of a local 'madman' preaching their gospel in a local park. You need to shout your message " +
             "at the oblivious by-passers (yes, actually shout) so they too can see what you see and understand just the same! " +
             "The concept behind this small game was to explore VR and Voice Assistance in collaboration with each other to " +
@@ -119,32 +131,40 @@ const projectData = {
         "frameworks": "",
         "engines": "unity",
         "date": "2018",
-        "languages":"C#",
+        "languages":"c#",
         "roles": "Programmer",
         "credits": "Christoffer Alexander Krakou",
         "media": {
             "youtubeId": "",
             "download": {
                 "label": "",
-                "link": ""
+                "link": "",
+                "external": ""
             }
         }
     },
     "zinder": {
         "name": "Zinder",
-        "description": "TBD",
+        "description":
+            "This was a project done on my first semester, in the class called Prototyping at the IT University of " +
+            "Copenhagen. We were given two requirements for this prototype being 'It has to be at least 3 players playing' " +
+            " and 'there can only be one winner'. With these requirements we made a 4-player local multiplayer, where you and " +
+            " three other players have to try and woe their zombie with affection, to get the special kiss that makes you a zombie. " +
+            "The last person to woe their zombie, will be eaten by the rest. We opted for using controllers (both Xbox360 and PS4) " +
+            "so it would be easier to pick up and play. This proved a particularly tricky challenge for me to implement, but I managed.",
         "platforms": "windows",
         "frameworks": "",
         "engines": "unity",
         "date": "2017",
-        "languages":"C#",
+        "languages":"c#",
         "roles": "Programmer",
-        "credits": "",
+        "credits": "Astrid Knappmann,Ida Broni Christensen,Lorena Ciobanu,Marie-Louise Alexius Sørensen",
         "media": {
             "youtubeId": "",
             "download": {
-                "label": "",
-                "link": ""
+                "label": "Download",
+                "link": "../static/zinder.zip",
+                "external": "false"
             }
         }
     },

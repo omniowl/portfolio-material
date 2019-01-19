@@ -1,4 +1,23 @@
 const ChipConstants = {
+    //Languages
+    "": {
+        "avatar": {
+            "alt": "",
+            "img": ""
+        }
+    },
+    "c#": {
+        "avatar": {
+            "alt": "C#",
+            "img": "net.png"
+        }
+    },
+    "python": {
+        "avatar": {
+            "alt": "Python",
+            "img": "python.png"
+        }
+    },
     //Platforms
     "android": {
         "avatar": {
