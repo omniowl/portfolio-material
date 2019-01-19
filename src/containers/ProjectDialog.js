@@ -10,6 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import Chip from "@material-ui/core/es/Chip/Chip";
 import Avatar from "@material-ui/core/es/Avatar/Avatar";
 import YouTube from 'react-youtube';
+import axios from 'axios';
 
 // Constants
 import ChipConstants from '../constants/ChipConstants';
@@ -143,6 +144,52 @@ class ProjectDialog extends Component {
             return <></>;
         }
     };
+    getDownloadButton = data => {
+        let elem = <></>;
+        if(data["link"] !== "") {
+            const label = data["label"];
+            const link = data["link"];
+            const external = data["external"];
+            if(external === 'true') {
+                elem = (
+                    <Button variant="contained" onClick={() => this.openExternal(link)}
+                            style={{ color: 'white', backgroundColor: 'Green' }}
+                    >
+                        { label }
+                    </Button>
+                );
+            } else {
+                elem = (
+                    <Button variant="contained" onClick={() => this.startDownload(link, 'zinder.zip')}
+                            style={{ color: 'white', backgroundColor: 'Green' }}
+                    >
+                        Download
+                    </Button>
+                );
+            }
+        }
+
+        return elem;
+    };
+
+    openExternal = link => {
+        window.open(link, "_blank");
+    };
+
+    startDownload = (link, fileName) => {
+        axios({
+            url: link,
+            method: 'GET',
+            responseType: 'blob', // important
+        }).then((response) => {
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', fileName);
+            document.body.appendChild(link);
+            link.click();
+        });
+    };
 
     getProjectData = (open, handleClose, dialogId) => {
         if(dialogId !== undefined && dialogId !== '') {
@@ -171,7 +218,7 @@ class ProjectDialog extends Component {
                                     { this.getGridItems("Frameworks", data["frameworks"].split(','), true) }
                                 </Grid>
                                 <Grid item xs={1}>
-                                    { this.getGridItems("Languages", data["languages"].split(',')) }
+                                    { this.getGridItems("Languages", data["languages"].split(','), true) }
                                 </Grid>
                                 <Grid item xs={8}>
                                     { this.getGridItems("Roles", data["roles"].split(',')) }
@@ -194,7 +241,10 @@ class ProjectDialog extends Component {
                         <Grid container spacing={8} alignItems={"center"} className={this.props.classes.bottom}>
                             { this.getCredits(data["credits"].split(',')) }
                         </Grid>
-                        <Button variant="contained" onClick={handleClose} color="secondary">
+                            { this.getDownloadButton(data["media"]["download"]) }
+                        <Button variant="contained" onClick={handleClose}
+                                style={{ color: 'white', backgroundColor: 'Red' }}
+                        >
                             Close
                         </Button>
                     </DialogActions>
