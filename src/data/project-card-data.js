@@ -62,7 +62,7 @@ const projectCardData = {
     },
     "vr-preacher": {
       "imgAlt": "Preacing in Virtual Reality",
-      "imgName": "ElementalWars.png",
+      "imgName": "VRPreacher.png",
       "cardHeader": "VR Preacher",
       "cardShortText": "Become a preacher and shout your gospel to keep the attention of bypassers in VR.",
       "cardPlatforms": "vive,windows",
@@ -98,7 +98,7 @@ const projectCardData = {
       "imgAlt": "Dim Rooms Promo Art",
       "imgName": "DimRooms.png",
       "cardHeader": "Dim Rooms",
-      "cardShortText": "A simple and minimalistic puzzle game project.",
+      "cardShortText": "A simple and minimalistic puzzle game project trying to avoid the Update() loop in Unity.",
       "cardPlatforms": "windows",
       "cardEngines": "unity",
     },
