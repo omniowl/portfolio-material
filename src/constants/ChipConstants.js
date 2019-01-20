@@ -1,11 +1,30 @@
 const ChipConstants = {
-    //Languages
     "": {
         "avatar": {
             "alt": "",
             "img": ""
         }
     },
+    // Frameworks
+    "steamvr": {
+        "avatar": {
+            "alt": "SteamVR",
+            "img": "steam.png"
+        }
+    },
+    "google aiy voice": {
+        "avatar": {
+            "alt": "Google AIY Voice",
+            "img": "google.png"
+        }
+    },
+    "arcore": {
+        "avatar": {
+            "alt": "ARCore",
+            "img": "arcore.png"
+        }
+    },
+    //Languages
     "c#": {
         "avatar": {
             "alt": "C#",
@@ -62,18 +81,6 @@ const ChipConstants = {
             "img": "unity.png"
         }
     },
-    "google aiy voice": {
-        "avatar": {
-            "alt": "Google AIY Voice",
-            "img": "google.png"
-        }
-    },
-    "arcore": {
-        "avatar": {
-            "alt": "ARCore",
-            "img": "arcore.png"
-        }
-    }
 };
 
 export default ChipConstants;
