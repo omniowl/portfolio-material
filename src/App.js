@@ -46,10 +46,34 @@ class App extends Component {
                     ];
                     break;
                 case ViewConstants.UNIVERSITY:
-                    newView = [<ProjectContainer key={'university_container'} featured={false} category={"university"} />];
+                    newView = [
+                        <div key={'home_div'}>
+                            <h1>
+                                University Projects
+                            </h1>
+                            <Typography paragraph style={{ fontSize: 20}}>
+                                This section holds all of the projects I made during my time at the IT University of
+                                Copenhagen. Every project will hold information about what class it was done in, the
+                                context for doing it and other relevant information.
+                            </Typography>
+                        </div>,
+                        <ProjectContainer key={'university_container'} featured={false} category={"university"} />];
                     break;
                 case ViewConstants.PERSONAL:
-                    newView = [<ProjectContainer key={'personal_container'} featured={false} category={"personal"} />];
+                    newView = [
+                        <div key={'home_div'}>
+                            <h1>
+                                Personal Projects
+                            </h1>
+                            <Typography paragraph style={{ fontSize: 20}}>
+                                This section holds all of the projects I have worked on in my spare time or outside of
+                                university/work. Most of these projects have been done solo and most of them have never been
+                                finished but have dabbled in some concept or other to try and understand an underlying design,
+                                concept, to just try something out or to understand a piece of technology/programming I haven't
+                                used before.
+                            </Typography>
+                        </div>,
+                        <ProjectContainer key={'personal_container'} featured={false} category={"personal"} />];
                     break;
                 case ViewConstants.ABOUT:
                     newView = [<About key={'about_container'}/>];

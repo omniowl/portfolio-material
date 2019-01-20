@@ -32,8 +32,8 @@ class About extends Component {
         const { page, pages } = this.state;
         const arrowSize = {
             fontSize: 32
-        }
-        //let previousButton = <li className="previous" onClick={this.handlePrevious}><a href="#"><i className="fa fa-arrow-left"></i> Previous</a></li>;
+        };
+
         let previousButton = (
             <Button style={arrowSize} className={'previous'} onClick={this.handlePrevious}>
                 <FontAwesomeIcon icon={faArrowLeft}/>
