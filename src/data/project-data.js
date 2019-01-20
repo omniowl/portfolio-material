@@ -40,7 +40,7 @@ const projectData = {
             "download": {
                 "label": "",
                 "link": "",
-                "external": ""
+                "external": "false"
             }
         }
     },
@@ -64,7 +64,7 @@ const projectData = {
             "download": {
                 "label": "",
                 "link": "",
-                "external": ""
+                "external": "true"
             }
         }
     },
@@ -89,7 +89,56 @@ const projectData = {
             "download": {
                 "label": "",
                 "link": "",
-                "external": ""
+                "external": "true"
+            }
+        }
+    },
+    "gravity-matters": {
+        "name": "Gravity Matters",
+        "description":
+            "This was a project done on my first semester, in the class called Prototyping at the IT University of " +
+            "Copenhagen. We were given one requirement for this prototype being 'it has to use only one button'. With " +
+            "this requirement in mind we made a single player game, with a character that automatically runs all the time. " +
+            "Whenever you press the screen (since this could easily have been an mobile game) the gravity for the character " +
+            "shifts. This means you can run on the floor or the ceiling. The idea is to hit switches to open up the next part " +
+            "of the level you are in to progress.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2017",
+        "languages":"c#",
+        "roles": "Programmer",
+        "credits": "Astrid Knappmann,Lorena Ciobanu,Marie-Louise Alexius Sørensen,Danyang Wang",
+        "media": {
+            "youtubeId": "",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": "false"
+            }
+        }
+    },
+    "indy-chaplin": {
+        "name": "Indy Chaplin",
+        "description":
+            "This was a project done on my first semester, in the class called Prototyping at the IT University of " +
+            "Copenhagen. We were given one requirement for this prototype being 'it has to be an endless runner'. With " +
+            "this requirement in mind we made a single-player game where you have to traverse vertically out of a volcano " +
+            "with a character that resembles Indiana Jones while it's erupting. The mechanic by which you ascent is a " +
+            "grappling hook. With a few adjustments, this game could likely easily have been a mobile game.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2017",
+        "languages": "c#",
+        "roles": "Programmer",
+        "credits": "Astrid Knappmann,Ida Broni Christensen,Lorena Ciobanu,Sarah Grossi",
+        "media": {
+            "youtubeId": "",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": "false"
             }
         }
     },
@@ -114,7 +163,7 @@ const projectData = {
             "download": {
                 "label": "",
                 "link": "",
-                "external": ""
+                "external": "false"
             }
         }
     },
@@ -139,7 +188,7 @@ const projectData = {
             "download": {
                 "label": "",
                 "link": "",
-                "external": ""
+                "external": "false"
             }
         }
     },
@@ -163,7 +212,7 @@ const projectData = {
             "youtubeId": "",
             "download": {
                 "label": "Download",
-                "link": "../static/zinder.zip",
+                "link": "",
                 "external": "false"
             }
         }
