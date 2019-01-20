@@ -58,7 +58,7 @@ const projectCardData = {
       "cardHeader": "MURDERBOT9000",
       "cardShortText": "Try and convince a robot box to not terminate you by answering its questions.",
       "cardPlatforms": "raspberry",
-      "cardEngines": "google aiy voice",
+      "cardEngines": "",
     },
     "vr-preacher": {
       "imgAlt": "Preacing in Virtual Reality",
