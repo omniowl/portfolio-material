@@ -92,10 +92,24 @@ const projectCardData = {
       "cardPlatforms": "windows",
       "cardEngines": "unity",
     },
-
   },
   "personal": {
-
+    "dim-rooms": {
+      "imgAlt": "Dim Rooms Promo Art",
+      "imgName": "DimRooms.png",
+      "cardHeader": "Dim Rooms",
+      "cardShortText": "A simple and minimalistic puzzle game project.",
+      "cardPlatforms": "windows",
+      "cardEngines": "unity",
+    },
+    "basic-dialogue-system": {
+      "imgAlt": "Basic Dialogue Promo Art",
+      "imgName": "BasicDialogueSystem.png",
+      "cardHeader": "Basic Dialogue System",
+      "cardShortText": "A very basic Dialogue system originally made to be sold on the Unreal Engine Marketplace.",
+      "cardPlatforms": "windows",
+      "cardEngines": "unreal-engine-4",
+    },
   }
 };
 

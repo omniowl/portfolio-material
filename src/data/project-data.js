@@ -44,6 +44,29 @@ const projectData = {
             }
         }
     },
+    "basic-dialogue-system": {
+        "name": "Basic Dialogue System",
+        "description":
+            "This project was made to be sold for cheap on the Unreal Engine Market, but never really made it there due " +
+            "to a tedious and difficult submission process at the time of creation. The system is, as implied by the name, " +
+            "very simple in that all the user is required to do, is to provide an array of provided data structures and " +
+            "the system will take care of the rest.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unreal-engine-4",
+        "date": "2017",
+        "languages": "blueprint",
+        "roles": "Programmer,Artist",
+        "credits": "",
+        "media": {
+            "youtubeId": "oHRoBEXJKOM",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": "false"
+            }
+        }
+    },
     "bombtastic": {
         "name": "BombTastic",
         "description":
@@ -65,6 +88,30 @@ const projectData = {
                 "label": "",
                 "link": "",
                 "external": "true"
+            }
+        }
+    },
+    "dim-rooms": {
+        "name": "Dim Rooms",
+        "description":
+            "This was a project I at first decided to make as an attempt at making four dimensional puzzles. But making " +
+            "those kind of puzzles deemed a little too challenging for a single man effort. So instead I decided to explore " +
+            "something else. So I decided to instead make a codebase that makes use of Unity's Update() loop as little as " +
+            "possible. This, married with the simplicity of the minimalistic design/art that I've made myself, it could become " +
+            "a fairly nice and polished little puzzle game.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2018",
+        "languages":"c#",
+        "roles": "Programmer,Designer,Artist",
+        "credits": "",
+        "media": {
+            "youtubeId": "jJBv6UOoRdw",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": "false"
             }
         }
     },

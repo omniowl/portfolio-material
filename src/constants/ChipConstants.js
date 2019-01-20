@@ -6,10 +6,10 @@ const ChipConstants = {
         }
     },
     // Frameworks
-    "steamvr": {
+    "arcore": {
         "avatar": {
-            "alt": "SteamVR",
-            "img": "steam.png"
+            "alt": "ARCore",
+            "img": "arcore.png"
         }
     },
     "google aiy voice": {
@@ -18,13 +18,19 @@ const ChipConstants = {
             "img": "google.png"
         }
     },
-    "arcore": {
+    "steamvr": {
         "avatar": {
-            "alt": "ARCore",
-            "img": "arcore.png"
+            "alt": "SteamVR",
+            "img": "steam.png"
         }
     },
     //Languages
+    "blueprint": {
+        "avatar": {
+            "alt": "Blueprint",
+            "img": "blueprint.png"
+        }
+    },
     "c#": {
         "avatar": {
             "alt": "C#",
@@ -50,18 +56,6 @@ const ChipConstants = {
             "img": "ios.png"
         }
     },
-    "windows": {
-        "avatar": {
-            "alt": "Windows",
-            "img": "windows.png"
-        }
-    },
-    "vive": {
-        "avatar": {
-            "alt": "Vive",
-            "img": "vive.png"
-        }
-    },
     "linux": {
         "avatar": {
             "alt": "Linux",
@@ -74,11 +68,29 @@ const ChipConstants = {
             "img": "raspberry.png"
         }
     },
+    "vive": {
+        "avatar": {
+            "alt": "Vive",
+            "img": "vive.png"
+        }
+    },
+    "windows": {
+        "avatar": {
+            "alt": "Windows",
+            "img": "windows.png"
+        }
+    },
     //Engines
     "unity": {
         "avatar": {
             "alt": "Unity",
             "img": "unity.png"
+        }
+    },
+    "unreal-engine-4": {
+        "avatar": {
+            "alt": "Unreal Engine 4",
+            "img": "unreal4.png"
         }
     },
 };
