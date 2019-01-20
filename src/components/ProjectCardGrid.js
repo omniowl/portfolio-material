@@ -12,32 +12,36 @@ class ProjectCardGrid extends Component {
         let list = [];
         let platformTags = data["cardPlatforms"].split(',');
         let engineTags = data["cardEngines"].split(',');
-        platformTags.forEach((value, index) => {
-            let platformChipData = ChipConstants[value];
-            list.push(
-                <Badge key={"badge_" + platformChipData["avatar"]["alt"] + "_" + index} badgeContent={0} invisible={true} style={{ bottom: 4}}>
-                    <Avatar
-                        key={"avatar_" + platformChipData["avatar"]["alt"]+"_" + index}
-                        style={{ height: "32px", width: "32px" }}
-                        alt={platformChipData["avatar"]["alt"]}
-                        src={require("../img/avatars/"+platformChipData["avatar"]["img"])}
-                    />
-                </Badge>
-            );
-        });
-        engineTags.forEach((value, index) => {
-            let engineChipData = ChipConstants[value];
-            list.push(
-                <Badge key={"badge_" + engineChipData["avatar"]["alt"] + "_" + index} badgeContent={0} invisible={true} style={{ bottom: 5}}>
-                    <Avatar
-                        key={"avatar_" + engineChipData["avatar"]["alt"] + "_" + index}
-                        style={{ height: "32px", width: "32px" }}
-                        alt={engineChipData["avatar"]["alt"]}
-                        src={require("../img/avatars/"+engineChipData["avatar"]["img"])}
-                    />
-                </Badge>
-            );
-        });
+        if(platformTags.length > 0  && platformTags[0] !== '') {
+            platformTags.forEach((value, index) => {
+                let platformChipData = ChipConstants[value];
+                list.push(
+                    <Badge key={"badge_" + platformChipData["avatar"]["alt"] + "_" + index} badgeContent={0} invisible={true} style={{ bottom: 4}}>
+                        <Avatar
+                            key={"avatar_" + platformChipData["avatar"]["alt"]+"_" + index}
+                            style={{ height: "32px", width: "32px" }}
+                            alt={platformChipData["avatar"]["alt"]}
+                            src={require("../img/avatars/"+platformChipData["avatar"]["img"])}
+                        />
+                    </Badge>
+                );
+            });
+        }
+        if(engineTags.length > 0 && engineTags[0] !== '') {
+            engineTags.forEach((value, index) => {
+                let engineChipData = ChipConstants[value];
+                list.push(
+                    <Badge key={"badge_" + engineChipData["avatar"]["alt"] + "_" + index} badgeContent={0} invisible={true} style={{ bottom: 5}}>
+                        <Avatar
+                            key={"avatar_" + engineChipData["avatar"]["alt"] + "_" + index}
+                            style={{ height: "32px", width: "32px" }}
+                            alt={engineChipData["avatar"]["alt"]}
+                            src={require("../img/avatars/"+engineChipData["avatar"]["img"])}
+                        />
+                    </Badge>
+                );
+            });
+        }
         return list;
     };
 
