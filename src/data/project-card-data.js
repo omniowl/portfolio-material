@@ -118,6 +118,14 @@ const projectCardData = {
       "cardPlatforms": "windows",
       "cardEngines": "unity",
     },
+    "indras-web": {
+      "imgAlt": "Indras Web Screenshot",
+      "imgName": "IndrasWeb.png",
+      "cardHeader": "Indras Web",
+      "cardShortText": "You find yourself in a mysterious maze that doesn't seem to adhere to any logic or reason.",
+      "cardPlatforms": "windows",
+      "cardEngines": "unreal-engine-4",
+    },
     "basic-dialogue-system": {
       "imgAlt": "Basic Dialogue Promo Art",
       "imgName": "BasicDialogueSystem.png",

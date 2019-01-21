@@ -191,6 +191,29 @@ const projectData = {
             }
         }
     },
+    "indras-web": {
+        "name": "Indra's Web",
+        "description":
+            "This was an idea that sprung from a different game idea that could have become a commercial project. But " +
+            "the project ultimately took a different direction. However that project never succeeded and was too big in " +
+            "scope given how much time we had on our hands at the time. The game is supposed to be lovecraftian style " +
+            "horror, where the weirdness of it all creeps up on you slowly.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unreal-engine-4",
+        "date": "2018",
+        "languages": "blueprint",
+        "roles": "Programmer,Designer",
+        "credits": "",
+        "media": {
+            "youtubeId": "5H21B3XIkOg",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": ""
+            }
+        }
+    },
     "indy-chaplin": {
         "name": "Indy Chaplin",
         "description":
