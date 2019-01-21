@@ -25,11 +25,12 @@ import AttachMoney from '@material-ui/icons/AttachMoney';
 import School from '@material-ui/icons/School';
 import Person from '@material-ui/icons/Person';
 import HelpOutline from '@material-ui/icons/HelpOutline';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons/faGamepad';
 import {
     faGithub,
     faTwitter,
     faLinkedin,
-    faYoutube
+    faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 
 const drawerWidth = 240;
@@ -125,6 +126,14 @@ class SideMenu extends Component {
                             <ListItem>
                                 <ListItemIcon><AttachMoney style={{color: 'LimeGreen'}}/></ListItemIcon>
                                 <ListItemText primary="Commercial Projects"/>
+                            </ListItem>
+                        </Button>
+                        <Button onClick={() => handleViewSwitch(ViewConstants.GAMEJAM)} style={{ width: buttonWidth }}>
+                            <ListItem>
+                                <ListItemIcon>
+                                    <FontAwesomeIcon icon={faGamepad} style={{ color: 'black', fontSize: 20}}/>
+                                </ListItemIcon>
+                                <ListItemText primary="Game Jam Projects"/>
                             </ListItem>
                         </Button>
                         <Button onClick={() => handleViewSwitch(ViewConstants.UNIVERSITY)} style={{ width: buttonWidth }}>

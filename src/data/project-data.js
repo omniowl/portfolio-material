@@ -286,6 +286,56 @@ const projectData = {
             }
         }
     },
+    "nuke": {
+        "name": "Don't Nuke 'Em",
+        "description":
+            "This was a Global Game Jam entry made in 2018 with the theme 'Transmission'. This was my very first Game Jam " +
+            "ever and so I was there as a Designer and Programmer. This project was led by Francesco. The game is about " +
+            "choosing whether to nuke a neighboring nation or not. As you play, the game will throw codes at you on a screen " +
+            "and play sounds, which can only be interpreted by reading an actual physical manual printed on the side. " +
+            "Depending on your timing you may bomb too soon, too late, at the same time as your enemy or not press at all. " +
+            "You only get to press the button once and there is only that one button to interact with.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2018",
+        "languages":"c#",
+        "roles": "Programmer,Designer",
+        "credits": "Amanda Maria Stockholm James,Francesco Rugerfred Sedda,Joe Osborne,Julian Abela,Mateo Perez",
+        "media": {
+            "youtubeId": "",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": ""
+            }
+        }
+    },
+    "slice": {
+        "name": "Slice 'em Up",
+        "description":
+            "This was a Nordic Game Jam entry made in 2018 with the theme 'Breaking Point'. On this project I decided to " +
+            "challenge myself and did the whole project solo. The design, programming and art is all done by me. I didn't " +
+            "record the sounds and there was a few pieces of code gotten from public Github Repos. It's an endless highscore " +
+            "chase game where the object is to slice through the 'breaking point' of the object presented using swipe gestures " +
+            "on your phone until time runs out. It took roughly 26 hours to make the game from start to finish over a period " +
+            "of three days. While the game made it to the finals it sadly didn't place in top 3.",
+        "platforms": "android",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2018",
+        "languages": "c#",
+        "roles": "Programmer, Designer, Artist",
+        "credits": "",
+        "media": {
+            "youtubeId": "",
+            "download": {
+                "label": "Download",
+                "link": "https://omniowl.itch.io/slice-em-up",
+                "external": "true"
+            }
+        }
+    },
     "the-mountain": {
         "name": "The Mountain",
         "description":
@@ -303,6 +353,31 @@ const projectData = {
         "credits": "Brian Kale,Nathan Cranford,Ole Gunnar Stensrud,Stephen Whyte",
         "media": {
             "youtubeId": "Y6FIM9CEdBE",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": ""
+            }
+        }
+    },
+    "unnatural": {
+        "name": "Unnatural Selection",
+        "description":
+            "This was a LevelOne Game Jam entry made in 2018 with the theme 'Mutation'. Wd had a fairly large team which " +
+            "is unusual for Game Jams but we made it work out. The game is about being a person responsible for picking " +
+            "the embryos that gets to live on and make new humans those that don't. All of this is depending on the world's " +
+            "state which are fed to you through newspaper articles every time you've picked an embryo, to see if your choice " +
+            "solved the worlds current catastrophe. The main takeaway from the game is that no matter what choice you make " +
+            "there is no right choice. In the game of playing god, we are all losers. This project was led by Lorena Ciobanu.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2018",
+        "languages":"c#",
+        "roles": "Programmer,Designer",
+        "credits": "Alexandru Busnita,Christoffer Alexander Krakou,Dom Ford,Lorena Ciobanu,Marie-Louise Alexius Sørensen,Mathies Wiencke",
+        "media": {
+            "youtubeId": "",
             "download": {
                 "label": "",
                 "link": "",

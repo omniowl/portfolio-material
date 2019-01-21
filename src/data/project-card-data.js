@@ -51,6 +51,32 @@ const projectCardData = {
       "cardEngines": "unreal-engine-4",
     },
   },
+  "game-jam": {
+    "slice": {
+      "imgAlt": "Slice 'em Up Promo Art",
+      "imgName": "SliceEmUp.png",
+      "cardHeader": "Slice 'em Up",
+      "cardShortText": "A Nordic Game Jam entry from 2018 that made it to the finals with the theme 'Breaking Point'",
+      "cardPlatforms": "android",
+      "cardEngines": "unity",
+    },
+    "unnatural": {
+      "imgAlt": "Unnatural Selection Promo Art",
+      "imgName": "UnnaturalSelection.png",
+      "cardHeader": "Unnatural Selection",
+      "cardShortText": "A LevelOne Game Jam entry from 2018 which was hosted at the IT University of Copenhagen.",
+      "cardPlatforms": "windows",
+      "cardEngines": "unity",
+    },
+    "nuke": {
+      "imgAlt": "Don't Nuke 'Em Promo Art",
+      "imgName": "DontNukeEm.png",
+      "cardHeader": "Don't Nuke 'Em",
+      "cardShortText": "A Global Game Jam entry from 2018 which was hosted at the Unity Headquarters in Copenhagen.",
+      "cardPlatforms": "windows",
+      "cardEngines": "unity",
+    },
+  },
   "university": {
     "elemental-wars": {
       "imgAlt": "Elemental Wars Start Screen",
@@ -138,7 +164,7 @@ const projectCardData = {
       "imgAlt": "Kingdom Hearts UI",
       "imgName": "KH-UI.png",
       "cardHeader": "Kingdom Hearts UI",
-      "cardShortText": "A small experiment trying to learn the Canvas System of Unreal Engine 4",
+      "cardShortText": "A small experiment trying to learn the UMG System of Unreal Engine 4",
       "cardPlatforms": "windows",
       "cardEngines": "unreal-engine-4",
     },

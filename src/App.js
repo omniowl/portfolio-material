@@ -46,6 +46,20 @@ class App extends Component {
                         <ProjectContainer key={'commercial_container'} featured={false} category={"commercial"}/>
                     ];
                     break;
+                case ViewConstants.GAMEJAM:
+                    newView = [
+                        <div key={'gamejam_div'}>
+                            <h1>Game Jam Projects</h1>
+                            <Typography paragraph style={{ fontSize: 20}}>
+                                In this section I list the projects that I've managed to do in Game Jams. A Game Jam is
+                                a short sprint (usually two to three days) where you or a group have to make a game given
+                                a specific theme by those hosting the Game Jam. This puts severe restrictions on what you
+                                can achieve and it also highly encourages experimentation.
+                            </Typography>
+                        </div>,
+                        <ProjectContainer key={'gamejam_container'} featured={false} category={"game-jam"}/>
+                    ];
+                    break;
                 case ViewConstants.UNIVERSITY:
                     newView = [
                         <div key={'home_div'}>
