@@ -18,16 +18,6 @@ const projectCardData = {
     }
   },
   "commercial": {
-    "bombtastic": {
-      "imgAlt": "Bombtastic Promo Art",
-      "imgName": "BombtasticPromo.png",
-      "cardHeader": "BombTastic",
-      "cardShortText": "Use bombs to help a spheroid traverse various themed levels with obstacles.",
-      "cardPlatforms": "android,ios",
-      "cardEngines": "unity",
-    }
-  },
-  "university": {
     "empty": {
       "imgAlt": "",
       "imgName": "",
@@ -36,6 +26,32 @@ const projectCardData = {
       "cardPlatforms": "",
       "cardEngines": "",
     },
+    "bombtastic": {
+      "imgAlt": "Bombtastic Promo Art",
+      "imgName": "BombtasticPromo.png",
+      "cardHeader": "BombTastic",
+      "cardShortText": "Use bombs to help a spheroid traverse various themed levels with obstacles.",
+      "cardPlatforms": "android,ios",
+      "cardEngines": "unity",
+    },
+    "ftc": {
+      "imgAlt": "Flying! Thunder! Chase! Promo Art",
+      "imgName": "FTC.jpg",
+      "cardHeader": "Flying! Thunder! Chase!",
+      "cardShortText": "Fly through space and escape an ever expanding black hole, trying to swallow you whole!",
+      "cardPlatforms": "android",
+      "cardEngines": "unreal-engine-4",
+    },
+    "the-mountain": {
+      "imgAlt": "The Mountain Promo Art",
+      "imgName": "TheMountain.jpg",
+      "cardHeader": "The Mountain",
+      "cardShortText": "You find yourself in an old mine, where something supernatural drove everyone else away...",
+      "cardPlatforms": "windows",
+      "cardEngines": "unreal-engine-4",
+    },
+  },
+  "university": {
     "elemental-wars": {
       "imgAlt": "Elemental Wars Start Screen",
       "imgName": "ElementalWars.png",
@@ -107,6 +123,14 @@ const projectCardData = {
       "imgName": "BasicDialogueSystem.png",
       "cardHeader": "Basic Dialogue System",
       "cardShortText": "A very basic Dialogue system originally made to be sold on the Unreal Engine Marketplace.",
+      "cardPlatforms": "windows",
+      "cardEngines": "unreal-engine-4",
+    },
+    "kh-ui": {
+      "imgAlt": "Kingdom Hearts UI",
+      "imgName": "KH-UI.png",
+      "cardHeader": "Kingdom Hearts UI",
+      "cardShortText": "A small experiment trying to learn the Canvas System of Unreal Engine 4",
       "cardPlatforms": "windows",
       "cardEngines": "unreal-engine-4",
     },

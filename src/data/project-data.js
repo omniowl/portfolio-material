@@ -36,7 +36,7 @@ const projectData = {
         "roles": "Programmer",
         "credits": "Balder Herman Brusch,Christoffer Alexander Krakou",
         "media": {
-            "youtubeId": "",
+            "youtubeId": "0tNce6ULaQ0",
             "download": {
                 "label": "",
                 "link": "",
@@ -140,6 +140,32 @@ const projectData = {
             }
         }
     },
+    "ftc": {
+        "name": "Flying! Thunder! Chase!",
+        "description":
+            "This was one of the first serious Commercial Projects I ever tried to get out into the world but ultimately " +
+            "it failed. It was supposed to be an endless space flier where the objective is to get as far as possible, " +
+            "before dying. The initial prototypes were done in 2D but later it was moved over to 3D before a release was " +
+            "attempted. As this was one of the first really serious productions I led myself, there was a lot of difficulty " +
+            "along the way. But I did manage to implement Leaderboards and there was an attempt at getting Microtransactions " +
+            "to work as well to buy additional ships. Even though the project failed it led me, and the rest of the team to " +
+            "release BombTastic instead which did get finished and put on the app store for both iOS and Android.",
+        "platforms": "android",
+        "frameworks": "",
+        "engines": "unreal-engine-4",
+        "date": "2015",
+        "languages":"blueprint",
+        "roles": "Project Manager,Designer,Programmer",
+        "credits": "Brian Kale,Nathan Cranford,Ole Gunnar Stensrud,Stephen Whyte",
+        "media": {
+            "youtubeId": "K2j1NUNZLEQ",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": ""
+            }
+        }
+    },
     "gravity-matters": {
         "name": "Gravity Matters",
         "description":
@@ -189,6 +215,29 @@ const projectData = {
             }
         }
     },
+    "kh-ui": {
+        "name": "Kingdom Hearts UI",
+        "description":
+            "This was a small experiment in which I wanted to recreate a UI from a known game, to see if I could gain a " +
+            "better understanding of the Unreal Engine 4's Universal Motion Graphics (UMG) framework to create User " +
+            "Interfaces. The sounds were taken from the game and the rest of the art for the UI was created by me by " +
+            "looking at the Kingdom Hearts original UI art.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unreal-engine-4",
+        "date": "2016",
+        "languages":"blueprint",
+        "roles": "Programmer,Designer,Artist",
+        "credits": "",
+        "media": {
+            "youtubeId": "zIFLIgJ8rjs",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": "false"
+            }
+        }
+    },
     "murderbot": {
         "name": "MURDERBOT9000",
         "description":
@@ -211,6 +260,30 @@ const projectData = {
                 "label": "",
                 "link": "",
                 "external": "false"
+            }
+        }
+    },
+    "the-mountain": {
+        "name": "The Mountain",
+        "description":
+            "This project was one of the first that was destined towards becoming commercial for me that I led. However " +
+            "way too far into production on the Proof of Concept most of us on the team were burned out as we had severely " +
+            "underestimated the scope of our project compared to the level of experience we currently had. I learned a " +
+            "lot in particular about project management, scoping, level design, video editing and how to hold auditions " +
+            "for voice acting as well as scouting people for other positions online.",
+        "platforms": "windows",
+        "frameworks": "",
+        "engines": "unreal-engine-4",
+        "date": "2014",
+        "languages": "blueprint",
+        "roles": "Project Manager,Designer,Programmer",
+        "credits": "Brian Kale,Nathan Cranford,Ole Gunnar Stensrud,Stephen Whyte",
+        "media": {
+            "youtubeId": "Y6FIM9CEdBE",
+            "download": {
+                "label": "",
+                "link": "",
+                "external": ""
             }
         }
     },

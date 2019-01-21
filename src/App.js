@@ -39,7 +39,8 @@ class App extends Component {
                             <Typography paragraph style={{ fontSize: 20}}>
                                 In this section you will find all the commercial projects that I'm allowed to list. The
                                 description of each project will state if someone was lead of the project, other than me
-                                otherwise, all projects that doesn't have an explicit lead listed, was led by me.
+                                otherwise, all projects that doesn't have an explicit lead listed, was led by me. This
+                                section will also list commercial projects that failed.
                             </Typography>
                         </div>,
                         <ProjectContainer key={'commercial_container'} featured={false} category={"commercial"}/>
