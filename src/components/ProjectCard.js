@@ -6,6 +6,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import ButtonBase from "@material-ui/core/es/ButtonBase/ButtonBase";
 
 const styles = {
     card: {
@@ -20,21 +21,22 @@ function ProjectCard(props) {
     const { classes, cardId, cardData, badges, handleClick } = props;
     return (
         <Card className={classes.card}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image={require("../img/game-cards/"+cardData["image"])}
-                    title={cardData["title"]}
-                    onClick={() => handleClick(cardId)}
-                />
-                <CardContent onClick={() => handleClick(cardId)}>
-                    <h5>{cardData["title"]}</h5>
-                    <Typography component="p">
-                        { cardData["description"] }
-                    </Typography>
-                </CardContent>
-                { badges }
-            </CardActionArea>
+            <ButtonBase onClick={() => handleClick(cardId)}>
+                <CardActionArea>
+                    <CardMedia
+                        className={classes.media}
+                        image={require("../img/game-cards/"+cardData["image"])}
+                        title={cardData["title"]}
+                    />
+                    <CardContent>
+                        <h5>{cardData["title"]}</h5>
+                        <Typography component="p">
+                            { cardData["description"] }
+                        </Typography>
+                    </CardContent>
+                    { badges }
+                </CardActionArea>
+            </ButtonBase>
         </Card>
     );
 }

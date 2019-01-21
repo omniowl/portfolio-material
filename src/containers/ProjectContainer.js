@@ -11,7 +11,6 @@ class ProjectContainer extends Component {
     };
 
     handleCardClick = id => {
-
         this.setState({
             dialogOpen: true,
             dialogId: id
