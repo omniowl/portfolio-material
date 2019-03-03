@@ -67,6 +67,33 @@ const projectData = {
             }
         }
     },
+    "bad-cardma": {
+        "name": "Bad Cardma",
+        "description":
+            "This was a LevelOne Game Jam entry made in 2019 with the theme 'Bad Decisions'. This was a team of one programmer, " +
+            "one writer and myself as programmer and artist (as we couldn't find an artist to join us). The game is about being " +
+            "a ruler of a kingdom. You are presented with a deck of cards, which represents choices you have to make between " +
+            "two factions at the time. The three factions in play are The Nobles, The Church and The People. Whenever you make a " +
+            "choice, one faction gets better standing with you, while the other gets worse standing. You have to get through the " +
+            "deck of cards but one of the three factions can dethrone you, if you antagonize them too much. Some of the choices have " +
+            "'event cards' attached to them, which will add more cards to the deck which will symbolize long term consequences to short " +
+            "term decisions. No choices are good, when you rule.",
+        "platforms": "android",
+        "frameworks": "",
+        "engines": "unity",
+        "date": "2019",
+        "languages":"c#",
+        "roles": "Artist,Designer,Programmer",
+        "credits": "Anders Damkjær Nielsen,Andreas Saur Feldstedt",
+        "media": {
+            "youtubeId": "NdV2OqbjMDM",
+            "download": {
+                "label": "Download",
+                "link": "https://omniowl.itch.io/bad-cardma",
+                "external": "true"
+            }
+        }
+    },
     "bombtastic": {
         "name": "BombTastic",
         "description":
@@ -303,11 +330,11 @@ const projectData = {
         "roles": "Programmer,Designer",
         "credits": "Amanda Maria Stockholm James,Francesco Rugerfred Sedda,Joe Osborne,Julian Abela,Mateo Perez",
         "media": {
-            "youtubeId": "",
+            "youtubeId": "bqBAah1h400",
             "download": {
-                "label": "",
-                "link": "",
-                "external": ""
+                "label": "Download",
+                "link": "https://globalgamejam.org/2018/games/dont-nuke-em",
+                "external": "true"
             }
         }
     },
@@ -363,7 +390,7 @@ const projectData = {
     "unnatural": {
         "name": "Unnatural Selection",
         "description":
-            "This was a LevelOne Game Jam entry made in 2018 with the theme 'Mutation'. Wd had a fairly large team which " +
+            "This was a LevelOne Game Jam entry made in 2018 with the theme 'Mutation'. We had a fairly large team which " +
             "is unusual for Game Jams but we made it work out. The game is about being a person responsible for picking " +
             "the embryos that gets to live on and make new humans those that don't. All of this is depending on the world's " +
             "state which are fed to you through newspaper articles every time you've picked an embryo, to see if your choice " +
@@ -375,13 +402,13 @@ const projectData = {
         "date": "2018",
         "languages":"c#",
         "roles": "Programmer,Designer",
-        "credits": "Alexandru Busnita,Christoffer Alexander Krakou,Dom Ford,Lorena Ciobanu,Marie-Louise Alexius Sørensen,Mathies Wiencke",
+        "credits": "Alexandru Busnita,Christoffer Alexander Krakou,Dom Ford,Lorena Ciobanu,Marie-Louise Alexius Sørensen,Mathies Wiencke,Rareş Popa",
         "media": {
-            "youtubeId": "",
+            "youtubeId": "IXXbpJ-fWVE",
             "download": {
-                "label": "",
-                "link": "",
-                "external": ""
+                "label": "Download",
+                "link": "https://mattwild.itch.io/unnatural-selection",
+                "external": "true"
             }
         }
     },

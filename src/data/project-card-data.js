@@ -52,6 +52,14 @@ const projectCardData = {
     },
   },
   "game-jam": {
+    "bad-cardma": {
+        "imgAlt": "Bad Cardma Promo Art",
+        "imgName": "BadCardma.png",
+        "cardHeader": "Bad Cardma",
+        "cardShortText": "A LevelOne Game Jam entry from 2019 which was hosted at the IT University of Copenhagen.",
+        "cardPlatforms": "android",
+        "cardEngines": "unity",
+    },
     "slice": {
       "imgAlt": "Slice 'em Up Promo Art",
       "imgName": "SliceEmUp.png",
