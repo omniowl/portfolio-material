@@ -159,10 +159,10 @@ const projectData = {
         "roles": "Lead Programmer",
         "credits": "Andreas Saur Feldstedt,Astrid Knappmann,Christoffer Alexander Krakou,Lorena Ciobanu,Mathias Jean Johansen,Mathias Stie-Svendsen",
         "media": {
-            "youtubeId": "",
+            "youtubeId": "PgSD11HZsm8",
             "download": {
-                "label": "",
-                "link": "",
+                "label": "Try in Browser",
+                "link": "http://krakou.dk/hostedgames/elementalwars/",
                 "external": "true"
             }
         }
