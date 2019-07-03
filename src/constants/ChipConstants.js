@@ -18,6 +18,12 @@ const ChipConstants = {
             "img": "google.png"
         }
     },
+    "google speech-to-text": {
+        "avatar": {
+            "alt": "Google Cloud Speech-to-Text",
+            "img": "google.png"
+        }
+    },
     "steamvr": {
         "avatar": {
             "alt": "SteamVR",

@@ -422,7 +422,7 @@ const projectData = {
             "The concept behind this small game was to explore VR and Voice Assistance in collaboration with each other to " +
             "see how this level of anonymity, yet exposure, affects people's behaviour as they play.",
         "platforms": "vive,windows",
-        "frameworks": "steamvr",
+        "frameworks": "steamvr,google speech-to-text",
         "engines": "unity",
         "date": "2018",
         "languages":"c#",
