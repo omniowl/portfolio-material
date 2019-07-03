@@ -78,11 +78,10 @@ class About extends Component {
                     </Grid>
                     <Grid item lg={8} style={{ width: '100%', height: '95%'}}>
                         <Typography style={{ fontWeight: 'bold', fontSize: 24}}>
-                            You can download my resume <a href={Resume} download={'Resume.pdf'} target={'_blank'}>here</a>
+                            You can download my full resume <a href={Resume} download={'Resume.pdf'} target={'_blank'}>here</a>
                         </Typography>
                         <Grid container alignItems={'center'} spacing={0}>
                             <Grid item xs={2}>
-                                {previous}
                             </Grid>
                             <Grid item xs={8}>
                                 <PDF
@@ -92,7 +91,6 @@ class About extends Component {
                                 />
                             </Grid>
                             <Grid item xs={2}>
-                                {next}
                             </Grid>
                         </Grid>
                     </Grid>
