@@ -31,6 +31,7 @@ import {
     faTwitter,
     faLinkedin,
     faYoutube,
+    faResearchgate,
 } from '@fortawesome/free-brands-svg-icons';
 
 const drawerWidth = 240;
@@ -103,6 +104,11 @@ class SideMenu extends Component {
                                     style={{ color: 'white', fontSize: iconSize }}
                             >
                                 <FontAwesomeIcon icon={faLinkedin}/>
+                            </Button>
+                            <Button onClick={() => this.openExternal(ExternalConstants.RESEARCH_GATE)}
+                                    style={{ color: 'white', fontSize: iconSize }}
+                            >
+                                <FontAwesomeIcon icon={faResearchgate}/>
                             </Button>
                         </Typography>
                     </Toolbar>
