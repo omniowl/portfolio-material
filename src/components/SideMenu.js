@@ -209,6 +209,16 @@ class SideMenu extends Component {
                                 <ListItemText primary="LinkedIn"/>
                             </ListItem>
                         </Button>
+                        <Button style={{ width: buttonWidth }} onClick={() =>
+                            this.openExternal(ExternalConstants.RESEARCH_GATE)}
+                        >
+                            <ListItem>
+                                <ListItemIcon>
+                                    <FontAwesomeIcon icon={faResearchgate} style={{ fontSize: iconSize, color: "Green"}}/>
+                                </ListItemIcon>
+                                <ListItemText primary="ResearchGate"/>
+                            </ListItem>
+                        </Button>
                     </List>
                 </Drawer>
                 <main className={classes.content}>
